@@ -25,7 +25,6 @@ const Header = () => {
       <div className="ml-2">
         <p>- hoặc -</p>
       </div>
-
       <div className="hover:cursor-pointer flex items-center justify-center ml-2">
         <p>+84</p>
         <IoMdArrowDropdown className="w-[25px] h-[25px]" />

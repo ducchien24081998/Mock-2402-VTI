@@ -1,32 +1,34 @@
-import React from "react";
-import MenuItem from "./MenuItem";
-import { IoMdArrowDropdown } from "react-icons/io";
+import React from 'react'
+import MenuItem from './MenuItem'
+import { IoMdArrowDropdown } from 'react-icons/io';
 
 const Menu = () => {
-  const menuItems = [
-    {
-      title: "Hồ Chí Minh",
-      children: ["Hồ Chí Minh", "Hà Nội", "Đà Nẵng", "Cần Thơ", "Hải Phòng"],
-    },
-    "Thử Quán Mới",
-    "Đang Khuyến Mại",
 
-    "Thương Hiệu Quen Thuộc",
-    "Cửa Hàng Gần Bạn",
-    "Vừa Đặt Gần Đây",
-    "Cửa Hàng Chu Đáo",
-    "Đăng Nhập",
+  const menuItems = [
+
+    {
+      title: 'Hồ Chí Minh',
+      children: ['Hồ Chí Minh', 'Hà Nội', 'Đà Nẵng', 'Cần Thơ', 'Hải Phòng']
+    },
+    'Thử Quán Mới',
+    'Đang Khuyến Mại',
+
+    'Thương Hiệu Quen Thuộc',
+    'Cửa Hàng Gần Bạn',
+    'Vừa Đặt Gần Đây',
+    'Cửa Hàng Chu Đáo',
+    'Đăng Nhập'
   ];
 
   return (
-    <div className="flex items-center justify-center w-full h-auto">
+    <div className='flex items-center justify-center w-full h-auto'>
       <nav>
         <ul className="flex space-x-4">
           <li>
             <div className="relative group">
               <button className="flex items-start justify-start text-gray-900 w-[150px] hover:text-red-600">
                 Hồ Chí Minh
-                <IoMdArrowDropdown className="w-[25px] h-[25px]" />
+                <IoMdArrowDropdown className='w-[25px] h-[25px]' />
               </button>
               <ul className="absolute hidden space-y-1 bg-white border border-gray-200 rounded-md shadow-lg group-hover:block">
                 <li>
@@ -103,17 +105,14 @@ const Menu = () => {
             </a>
           </li>
           <li>
-            <a
-              className="px-2 py-1 font-bold text-gray-900 bg-gray-200 border-2 rounded-lg hover:text-red-600"
-              href="#"
-            >
+            <a className="px-2 py-1 font-bold text-gray-900 bg-gray-200 border-2 rounded-lg hover:text-red-600" href="#">
               Đăng Nhập
             </a>
           </li>
         </ul>
       </nav>
     </div>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu
